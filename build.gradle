@@ -1,0 +1,10 @@
+defaultTasks '%PROJECT_NAME%-web:clean',
+        '%PROJECT_NAME%-web:yarn',
+        '%PROJECT_NAME%-web:yarn_run_build-test',
+        '%PROJECT_NAME%-web:webjar',
+        '%PROJECT_NAME%-api:clean',
+        '%PROJECT_NAME%-api:build'
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.3'
+}

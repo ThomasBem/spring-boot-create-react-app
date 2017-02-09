@@ -1,0 +1,31 @@
+{
+  "name": "%PROJECT_NAME%-web",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^3.1.0",
+    "enzyme": "^2.7.1",
+    "flow-bin": "^0.38.0",
+    "json-server": "^0.9.4",
+    "react-addons-test-utils": "^15.4.2",
+    "react-scripts": "0.8.5",
+    "react-test-renderer": "^15.4.2",
+    "rimraf": "^2.5.4"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "scripts": {
+    "start": "concurrently --kill-others 'react-scripts start' 'json-server -w -p 3001 mock-data/test.json'",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "flow": "flow",
+    "build-test": "yarn run build && CI=true react-scripts test --env=jsdom"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "proxy": "http://localhost:3001/"
+}

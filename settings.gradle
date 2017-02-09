@@ -1,0 +1,4 @@
+rootProject.name = '%PROJECT_NAME%'
+include '%PROJECT_NAME%-api'
+include '%PROJECT_NAME%-web'
+

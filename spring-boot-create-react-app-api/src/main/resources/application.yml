@@ -1,0 +1,10 @@
+info:
+ build:
+  name: '%PROJECT_NAME%'
+  description:
+  version: '@version@'
+
+springfox:
+ title: ${info.build.name}
+ description: ${info.build.description}
+ version: ${info.build.version}
