@@ -22,9 +22,6 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 repositories {
-    maven {
-        url  "http://dl.bintray.com/thomasbem/maven"
-    }
     jcenter()
     mavenCentral()
     maven { url 'https://repo.spring.io/snapshot' }
@@ -68,7 +65,6 @@ afterEvaluate {
         }
     }
 }
-
 
 jar {
     baseName = '%PROJECT_NAME%'
