@@ -24,5 +24,11 @@ __Run front-end for development__
 
 <img src="https://github.com/thomasbem/spring-boot-create-react-app/raw/master/Template.gif" alt="Screenshot of the tool" width="100%">
 
+__Build and run full stack__
+
+1. Run `./gradlew` to build project
+2. `cd <project_name>-api/build/libs/`
+3. Type `java -jar ` then tab to auto complete to latest version. First time this should be, `java -jar <project_name>-0.0.1-SNAPSHOT.jar` 
+
 Now go have fun!
 
