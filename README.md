@@ -16,5 +16,13 @@ __Setup project:__
 
 When adding new modules to package.json, run `flow-typed install`. This fetches flow type definitions for npm modules if they exist.
 
+__Run front-end for development__
+
+1. `cd <project_name>-web`
+2. Run `yarn run start` to startup the front-end with a mock back-end using json-server
+3. Navigate to localhost:3000
+
+<img src="https://github.com/thomasbem/spring-boot-create-react-app/raw/master/Template.gif" alt="Screenshot of the tool" width="100%">
+
 Now go have fun!
 
