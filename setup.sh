@@ -3,6 +3,7 @@
 ./gradlew
 echo 'Deleting setup scripts'
 rm Template.gif
+rm .travis.yml
 rm setup.gradle
 rm -- "$0"
 echo ''

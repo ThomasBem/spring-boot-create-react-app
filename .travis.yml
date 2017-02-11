@@ -1,6 +1,17 @@
 language: java
 jdk:
  - oraclejdk8
-install: true
+env:
+ - NODE_VERSION=6
+install:
+ - nvm install $NODE_VERSION
+ - nvm use $NODE_VERSION
+ - sudo apt-get install -y curl
+ - curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+ - sudo apt-get install -y nodejs
+ - sudo npm install -g yarn
 script:
- ./gradlew
+ - ./setup.sh
+branches:
+only:
+ - /.*/
