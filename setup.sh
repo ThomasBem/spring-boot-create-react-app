@@ -2,6 +2,7 @@
 ./gradlew -b setup.gradle -PprojectName="${PWD##*/}"
 ./gradlew
 echo 'Deleting setup scripts'
+rm Template.gif
 rm setup.gradle
 rm -- "$0"
 echo ''
