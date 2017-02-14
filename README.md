@@ -33,8 +33,11 @@ __Build and run full stack__
 
 
 __Guide on how to deploy application to Heroku__
+
 1. Create new blank app in Heroku
-2. Add .travis.yml to cloned project
+2. Add .travis.yml to cloned project (See code block below)
+3. Push to Github and enabled TravisCI building
+4. Add HEROKU_API_KEY environment variable to Travis with your HEROKU_API_TOKEN (Can be found in Heroku or using Heroku cli - `heroku auth:token)`
 
 ```
 language: java
@@ -55,9 +58,6 @@ script:
  - ./gradlew
  - ./heroku/bin/heroku jar:deploy _project-name_-api/build/libs/*.jar --app _heroku-app-name_ HEROKU_API_KEY
 ```
-
-3. Push to Github and enabled TravisCI building
-4. Add HEROKU_API_KEY environment variable to Travis with your HEROKU_API_TOKEN (Can be found in Heroku or using Heroku cli - `heroku auth:token)`
 
 Now go have fun!
 
