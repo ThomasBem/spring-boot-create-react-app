@@ -12,6 +12,7 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 repositories {
+    jcenter()
     flatDir { dirs '../%PROJECT_NAME%-web/dist/libs' }
 }
 
