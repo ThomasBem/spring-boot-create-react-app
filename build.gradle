@@ -6,5 +6,5 @@ defaultTasks '%PROJECT_NAME%-web:clean',
         '%PROJECT_NAME%-api:build'
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '3.3'
+    gradleVersion = '3.4'
 }
