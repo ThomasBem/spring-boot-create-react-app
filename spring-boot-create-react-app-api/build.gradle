@@ -1,12 +1,12 @@
 plugins {
+    id "java"
+    id "groovy"
+    id "maven"
+    id "idea"
+    id "jacoco"
+
     id "org.springframework.boot" version "1.5.1.RELEASE"
 }
-
-apply plugin: 'maven'
-apply plugin: 'java'
-apply plugin: 'idea'
-apply plugin: 'groovy'
-apply plugin: 'jacoco'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
