@@ -1,14 +1,13 @@
 // @flow
-import React, { Component } from 'react';
-import { getText } from './AppService';
+import React from 'react';
+import getText from './AppService';
 import Header from './header/Header';
 
-class App extends Component {
+type State = {
+  text: string
+};
 
-  state = {
-    text: String
-  }
-
+class App extends React.Component<{}, State> {
   constructor() {
     super();
     this.state = {
@@ -27,7 +26,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header text={this.state.text}/>
+        <Header text={this.state.text} />
       </div>
     );
   }

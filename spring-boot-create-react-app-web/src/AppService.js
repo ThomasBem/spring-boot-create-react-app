@@ -7,6 +7,10 @@ const options = {
   }
 };
 
-export function getText() {
-    return fetch('/test', options).then(response => response.json());
+type Response = {
+  text: string
 }
+
+const getText = (): Promise<Response> => fetch('/test', options).then(response => response.json());
+
+export default getText;
