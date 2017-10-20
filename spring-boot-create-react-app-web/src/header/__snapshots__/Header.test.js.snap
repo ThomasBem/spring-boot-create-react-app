@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders app component with logo visible 1`] = `
+<div
+  className="Header"
+>
+  <img
+    alt=""
+    className="Header-logo"
+    src="create-react-app.png"
+  />
+  <h2>
+    Spring-Boot-Create-React-App Template!
+  </h2>
+  <button
+    onClick={[Function]}
+  >
+    Toggle Logo
+  </button>
+</div>
+`;
+
+exports[`renders app component without logo visible 1`] = `
+<div
+  className="Header"
+>
+  <h2>
+    Spring-Boot-Create-React-App Template!
+  </h2>
+  <button
+    onClick={[Function]}
+  >
+    Toggle Logo
+  </button>
+</div>
+`;
