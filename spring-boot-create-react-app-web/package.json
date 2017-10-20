@@ -21,7 +21,7 @@
     "test": "react-scripts test --env=jsdom --setupTestFrameworkScriptFile ./.enzyme.js",
     "eject": "react-scripts eject",
     "flow": "flow",
-    "build-test": "yarn run build && CI=true yarn run test"
+    "build-test": "yarn run build && CI=true react-scripts test --env=jsdom --setupTestFrameworkScriptFile ./.enzyme.js"
   },
   "eslintConfig": {
     "extends": "react-app"
