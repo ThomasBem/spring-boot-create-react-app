@@ -5,7 +5,7 @@ plugins {
     id "idea"
     id "jacoco"
 
-    id "org.springframework.boot" version "1.5.1.RELEASE"
+    id "org.springframework.boot" version "1.5.7.RELEASE"
 }
 
 sourceCompatibility = 1.8
@@ -19,19 +19,19 @@ repositories {
 dependencies {
     compile name: '%PROJECT_NAME%-web'
 
-    compile('com.github.springfox.loader:springfox-loader:0.1.2')
+    compile('com.github.springfox.loader:springfox-loader:1.2.0')
     compile('org.projectlombok:lombok')
 
     compile('org.springframework.boot:spring-boot-devtools')
     compile('org.springframework.boot:spring-boot-starter-web')
 
-    testCompile('cglib:cglib-nodep:3.2.4')
+    testCompile('cglib:cglib-nodep:3.2.5')
     testCompile('org.spockframework:spock-spring:1.0-groovy-2.4')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '3.4'
+    gradleVersion = '4.2'
 }
 
 bootRun {
